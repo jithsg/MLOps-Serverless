@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pao-app"
+version = "0.1.0"
+description = ""
+authors = ["Jithish J <135303624+jithsg@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "pao_app"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+requests = "^2.31.0"
+pandas = "^2.2.0"
+fire = "^0.5.0"
+pyarrow = "^15.0.0"
+ta = "^0.11.0"
+scikit-learn = "^1.4.0"
+xgboost = "^2.0.3"
+lightgbm = "^4.2.0"
+optuna = "^3.5.0"
+cerebrium = "^1.13.13"
+torch = "^2.1.2"
+pydantic = "^2.5.3"
+comet-ml = "^3.36.1"
+setuptools = "^69.0.3"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

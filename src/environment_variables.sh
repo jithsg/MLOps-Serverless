@@ -1,0 +1,8 @@
+export COMET_ML_API_KEY="Ecf9L8WpTLZBOxZ6tQt0sRgkQ"
+export COMET_ML_WORKSPACE="pao-app"
+# export COMET_ML_MODEL_NAME="YOUR_COMET_ML_MODEL_NAME"
+
+# export CEREBRIUM_API_KEY="YOUR_CEREBRIUM_API_KEY"
+
+# # you set this after deploying the API for the first time
+# export CEREBRIUM_ENDPOINT_URL="YOUR_CEREBRIUM_ENDPOINT_URL"
