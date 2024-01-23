@@ -11,7 +11,7 @@ from preprocessing import transform_ts_data_into_features_and_target
 from logger import get_console_logger
 logger = get_console_logger()
 from dotenv import load_dotenv
-import os
+
 
 # Load environment variables from .env file
 load_dotenv()
@@ -45,7 +45,7 @@ def train(
     # split the data into train and test
     train_sample_size = int(0.9 * len(X))
     X_train, X_test = X[:train_sample_size], X[train_sample_size:]
-    y_train, y_test = y[:train_sample_size], y[train_sample_size:]
+    y_test = y[train_sample_size:]
     logger.info(f'Train sample size: {len(X_train)}')
     logger.info(f'Test sample size: {len(X_test)}')
 

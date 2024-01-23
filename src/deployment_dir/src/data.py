@@ -48,9 +48,9 @@ def download_ohlc_data_from_coinbase(
 
     # save data to disk   
     # data.to_parquet(DATA_DIR / f"ohlc_from_{from_day}_to_{to_day}.parquet", index=False)
-    data.to_parquet(DATA_DIR / f"ohlc_data.parquet", index=False)
+    data.to_parquet(DATA_DIR / "ohlc_data.parquet", index=False)
 
-    return DATA_DIR / f"ohlc_data.parquet"
+    return DATA_DIR / "ohlc_data.parquet"
 
 def download_data_for_one_day(product_id: str, day: str) -> pd.DataFrame:
     """

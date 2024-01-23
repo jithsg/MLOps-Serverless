@@ -1,11 +1,10 @@
 from pydantic import BaseModel
-
+import os
 from model_registry_api import load_production_model_from_registry
 from logger import get_console_logger
 
 logger = get_console_logger('deployer')
 
-load_dotenv()
 
 # Now you can safely use the environment variable
 api_key = os.environ.get("COMET_ML_API_KEY")

@@ -60,8 +60,7 @@ def transform_ts_data_into_features_and_target(
     # features['time'] = times
 
     # numpy -> pandas
-    targets = pd.DataFrame(y, columns=[f'target_price_next_hour'])
-
+    targets = pd.DataFrame(y, columns=['target_price_next_hour'])
     return features, targets['target_price_next_hour']
 
 def get_cutoff_indices_features_and_target(
